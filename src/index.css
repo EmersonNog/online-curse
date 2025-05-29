@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+input,
+select,
+button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0px #cc0000aa;
+  }
+  50% {
+    box-shadow: 0 0 15px #cc0000aa;
+  }
+  100% {
+    box-shadow: 0 0 0px #cc0000aa;
+  }
+}
